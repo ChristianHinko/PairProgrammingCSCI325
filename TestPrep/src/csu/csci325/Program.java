@@ -16,6 +16,55 @@ public class Program
      */
     public static void main(String[] args)
     {
-        // TODO code application logic here
+        System.out.println("TESTING PARAMETERIZED CONSTRUCTORS:");
+        Vehicle scooter = new Vehicle("Scooter", 500);
+        
+        scooter.PrintVehicle();
+        
+        System.out.println("");
+        
+        Car jeep = new Car("Jeep", "Wrangler", "2007", 501);
+        
+        // Ensure that the Car's overriden PrintVehicle() method gets called
+        // rather than the Vehicle's base implementation. (Testing polymorphism with
+        // overriding)
+        jeep.PrintVehicle();
+        
+        System.out.println("");
+        System.out.println("");
+        System.out.println("TESTING SETTERS:");
+        
+        // Test our SetSpeed function on our Vehicle
+        System.out.println("                before SetSpeed():");
+        scooter.PrintVehicle();
+        System.out.println("");
+        scooter.SetSpeed(30);
+        System.out.println("                after SetSpeed():");
+        scooter.PrintVehicle();
+        
+        System.out.println("");
+        
+        // Test our SetModel function on our Car
+        System.out.println("                before SetModel():");
+        jeep.PrintVehicle();
+        jeep.SetModel("Cherokee");
+        System.out.println("                after SetModel():");
+        jeep.PrintVehicle();
+        System.out.println("");
+        
+        
+        // Default constructors:
+        
+        Vehicle defaultVehicle = new Vehicle();
+        Car defaultCar = new Car();
+        
+        System.out.println("");
+        System.out.println("TESTING DEFAULT CONSTRUCTORS:");
+        
+        defaultVehicle.PrintVehicle();
+        
+        System.out.println("");
+        
+        defaultCar.PrintVehicle();
     }
 }
