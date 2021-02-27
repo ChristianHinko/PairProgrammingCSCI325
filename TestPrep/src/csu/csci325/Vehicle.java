@@ -14,8 +14,8 @@ package csu.csci325;
 
 public class Vehicle 
 {
-    private String name;
-    private int speed;
+    protected String name;
+    protected int speed;
     
     public Vehicle()
     {

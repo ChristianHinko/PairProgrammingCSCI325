@@ -18,13 +18,24 @@ public class Car extends Vehicle
     
     public Car()
     {
+        name = "None";
+        speed = 0;
         model = "None";
         year = "None";
     }
-    public Car(String carModel, String carYear)
+    public Car(String carMake, String carModel, String carYear)
     {
+        name = carMake;
+        speed = 0;
         model = carModel;
         year = carYear;
+    }
+    public Car(String carMake, String carModel, String carYear, int carSpeed)
+    {
+        name = carMake;
+        model = carModel;
+        year = carYear;
+        speed = carSpeed;
     }
     
     @Override
