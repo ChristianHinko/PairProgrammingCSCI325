@@ -17,13 +17,15 @@ public class Program
     public static void main(String[] args)
     {
         System.out.println("TESTING PARAMETERIZED CONSTRUCTORS:");
+        
         Vehicle scooter = new Vehicle("Scooter", 500);
         
+        Car jeep = new Car("Jeep", "Wrangler", "2007", 501);
+        
+        // PrintVehicle() the Vehicle's base implementation
         scooter.PrintVehicle();
         
         System.out.println("");
-        
-        Car jeep = new Car("Jeep", "Wrangler", "2007", 501);
         
         // Ensure that the Car's overriden PrintVehicle() method gets called
         // rather than the Vehicle's base implementation. (Testing polymorphism with
@@ -55,9 +57,11 @@ public class Program
         
         // Default constructors:
         
+        // These contructors should initialize our variables
         Vehicle defaultVehicle = new Vehicle();
         Car defaultCar = new Car();
         
+        System.out.println("");
         System.out.println("");
         System.out.println("TESTING DEFAULT CONSTRUCTORS:");
         
