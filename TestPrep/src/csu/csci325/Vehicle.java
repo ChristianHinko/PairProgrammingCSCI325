@@ -6,6 +6,8 @@
 
 package csu.csci325;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Nathan Mixon
@@ -50,6 +52,11 @@ public class Vehicle
     public void SetName(String newName)
     {
         name = newName;
+    }
+    public void SetName(Scanner scanner)
+    {
+        System.out.println("Enter new name of vehicle: ");
+        name = scanner.nextLine();
     }
     
     public int GetSpeed()
