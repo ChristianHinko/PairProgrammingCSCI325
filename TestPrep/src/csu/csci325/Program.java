@@ -7,7 +7,7 @@ package csu.csci325;
 
 /**
  *
- * @author Christian Hinkle
+ * @author Christian Hinkle, Nathan Mixon
  */
 public class Program
 {
