@@ -8,6 +8,7 @@ package csu.csci325;
 /**
  *
  * @author Christian Hinkle
+ * @co-author Nathan Mixon
  */
 public class Car extends Vehicle
 {

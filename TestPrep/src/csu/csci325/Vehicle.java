@@ -8,7 +8,8 @@ package csu.csci325;
 
 /**
  *
- * @author natem
+ * @author Nathan Mixon
+ * @co-author Christian Hinkle
  */
 
 public class Vehicle 
