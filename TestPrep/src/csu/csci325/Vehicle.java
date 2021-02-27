@@ -14,18 +14,41 @@ package csu.csci325;
 
 public class Vehicle 
 {
+    private String name;
     private int speed;
     
-    public Vehicle ()
+    public Vehicle()
     {
+        name = "None";
         speed = 0;
-        
     }
-    public Vehicle (int vehicleSpeed)
+    public Vehicle(String vehicleName)
     {
-        speed = vehicleSpeed;
-        
+        name = vehicleName;
+        speed = 0;
     }
+    public Vehicle(String vehicleName, int vehicleSpeed)
+    {
+        name = vehicleName;
+        speed = vehicleSpeed;
+    }
+    
+    public void PrintVehicle()
+    {
+        System.out.println("Vehicle name: " + name);
+        System.out.println("Vehicle speed: " + speed);
+    }
+    
+    
+    public String GetName()
+    {
+        return name;
+    }
+    public void SetName(String newName)
+    {
+        name = newName;
+    }
+    
     public int GetSpeed()
     {
         return speed;
@@ -33,9 +56,5 @@ public class Vehicle
     public void SetSpeed(int newSpeed)
     {
         speed = newSpeed;
-    }
-    public void PrintVehicle()
-    {
-        System.out.println("Vehicle speed: " + speed);
     }
 }

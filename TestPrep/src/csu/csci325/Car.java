@@ -16,6 +16,11 @@ public class Car extends Vehicle
     private String year;
     
     
+    public Car()
+    {
+        model = "None";
+        year = "None";
+    }
     public Car(String carModel, String carYear)
     {
         model = carModel;
