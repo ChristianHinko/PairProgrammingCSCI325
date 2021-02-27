@@ -14,6 +14,7 @@ package csu.csci325;
 
 public class Vehicle 
 {
+    // encapsulation of hidden (protected) members but we have public methods handling them
     protected String name;
     protected int speed;
     
@@ -22,12 +23,12 @@ public class Vehicle
         name = "None";
         speed = 0;
     }
-    public Vehicle(String vehicleName)
+    public Vehicle(String vehicleName) // contructor overloading (polymorphism)
     {
         name = vehicleName;
         speed = 0;
     }
-    public Vehicle(String vehicleName, int vehicleSpeed)
+    public Vehicle(String vehicleName, int vehicleSpeed) // contructor overloading (polymorphism)
     {
         name = vehicleName;
         speed = vehicleSpeed;
@@ -39,6 +40,8 @@ public class Vehicle
         System.out.println("Vehicle speed: " + speed);
     }
     
+    
+    // Public accessors for accessing encapsulated members:
     
     public String GetName()
     {

@@ -23,14 +23,14 @@ public class Car extends Vehicle
         model = "None";
         year = "None";
     }
-    public Car(String carMake, String carModel, String carYear)
+    public Car(String carMake, String carModel, String carYear) // contructor overloading (polymorphism)
     {
         name = carMake;
         speed = 0;
         model = carModel;
         year = carYear;
     }
-    public Car(String carMake, String carModel, String carYear, int carSpeed)
+    public Car(String carMake, String carModel, String carYear, int carSpeed) // contructor overloading (polymorphism)
     {
         name = carMake;
         model = carModel;
@@ -39,13 +39,16 @@ public class Car extends Vehicle
     }
     
     @Override
-    public void PrintVehicle()
+    public void PrintVehicle() // function overriding (polymorphism)
     {
         super.PrintVehicle();
         
         System.out.println("Car model: " + model);
         System.out.println("Car year: " + year);
     }
+    
+    
+    // Public accessors for accessing encapsulated members:
     
     public String GetModel()
     {

@@ -18,16 +18,18 @@ public class Program
     {
         System.out.println("TESTING PARAMETERIZED CONSTRUCTORS:");
         
+        // test A
         Vehicle scooter = new Vehicle("Scooter", 500);
         
+        // test B
         Car jeep = new Car("Jeep", "Wrangler", "2007", 501);
         
-        // PrintVehicle() the Vehicle's base implementation
+        // test C: PrintVehicle() the Vehicle's base implementation
         scooter.PrintVehicle();
         
         System.out.println("");
         
-        // Ensure that the Car's overriden PrintVehicle() method gets called
+        // test D: Ensure that the Car's overriden PrintVehicle() method gets called
         // rather than the Vehicle's base implementation. (Testing polymorphism with
         // overriding)
         jeep.PrintVehicle();
@@ -36,7 +38,7 @@ public class Program
         System.out.println("");
         System.out.println("TESTING SETTERS:");
         
-        // Test our SetSpeed function on our Vehicle
+        // test E: Test our SetSpeed function on our Vehicle
         System.out.println("                before SetSpeed():");
         scooter.PrintVehicle();
         System.out.println("");
@@ -46,7 +48,7 @@ public class Program
         
         System.out.println("");
         
-        // Test our SetModel function on our Car
+        // test F: Test our SetModel function on our Car
         System.out.println("                before SetModel():");
         jeep.PrintVehicle();
         jeep.SetModel("Cherokee");
@@ -58,7 +60,9 @@ public class Program
         // Default constructors:
         
         // These contructors should initialize our variables
+        // test G
         Vehicle defaultVehicle = new Vehicle();
+        // test H
         Car defaultCar = new Car();
         
         System.out.println("");
