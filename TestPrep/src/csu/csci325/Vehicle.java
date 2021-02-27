@@ -53,7 +53,7 @@ public class Vehicle
     {
         name = newName;
     }
-    public void SetName(Scanner scanner)
+    public void SetName(Scanner scanner) // function overloading (polymorphism)
     {
         System.out.println("Enter new name of vehicle: ");
         name = scanner.nextLine();
